@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+header, footer {
+    background-color: deepskyblue;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    border-bottom: 1px solid blue;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    border-top: 1px solid blue;
+}
+
+.text-card {
+    width: 200px;
+    padding: 15px 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+footer .text-card {
+    text-align: right;
+}
