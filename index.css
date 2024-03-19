@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -22,6 +18,7 @@ header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 5px;
 }
 
 header {
@@ -29,6 +26,8 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -36,14 +35,75 @@ footer {
     border-top: 1px solid blue;
 }
 
+#main-section > .sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+#main-section-data > h1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#main-section-data {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+#main-section {
+    display: flex;
+    flex: 1;
+}
+
+footer > h2 {
+    margin-left: 20px;
+}
+
+.banner-text {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.sidebar {
+    width: 150px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    .container > .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ol {
+    padding-left: 25px;
+}
+
+footer > .text-card {
+    text-align: right;
+}
+
 .text-card {
     width: 200px;
     padding: 15px 0;
     background-color: white;
-    border: 2px solid black;
     border-radius: 10px;
-}
-
-footer .text-card {
-    text-align: right;
 }
