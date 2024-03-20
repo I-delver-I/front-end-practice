@@ -106,4 +106,5 @@ footer > .text-card {
     padding: 15px 0;
     background-color: white;
     border-radius: 10px;
+    border: 1px solid black;
 }
